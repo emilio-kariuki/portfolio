@@ -36,7 +36,6 @@ export function Footer() {
             </a>
           ))}
         </div>
-
         <Button className="h-[55px] w-[230px] rounded-[120px] bg-white  hover:bg-[#D9D9D9]">
           <h1 className="text-[16px] font-semibold text-[#0C1927]">Talk With Me</h1>
         </Button>
