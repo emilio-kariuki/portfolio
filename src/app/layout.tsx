@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body className={`overscroll-none font-sans ${inter.variable}`}>
         <Header />
         <main>{children}</main>
       </body>

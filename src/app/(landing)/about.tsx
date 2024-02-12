@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Download } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { quickSand } from "~/lib/font";
-import Flutter from "~/assets/flutter.png";
-import Native from "~/assets/native.png";
-import Next from "~/assets/next.png";
-import Figma from "~/assets/figma.png";
-import TypeScript from "~/assets/typescript.png";
-import Git from "~/assets/git.png";
-import Postgres from "~/assets/postgres.png";
+import Flutter from "~/assets/flutter.svg";
+import Native from "~/assets/native.svg";
+import Next from "~/assets/next.svg";
+import Figma from "~/assets/figma.svg";
+import TypeScript from "~/assets/typescript.svg";
+import Git from "~/assets/git.svg";
+import Postgres from "~/assets/postgres.svg";
 import Image from "next/image";
 
 const stackIcons = [
@@ -43,7 +44,7 @@ export function About() {
         >
           About Me
         </h1>
-        <p className="mt-[40px] text-[14px] font-medium text-[#D9D9D9]">
+        <p className="mt-[40px] text-[16px] font-medium text-[#D9D9D9]">
           👾 Hey there! I’m Emilio 👾, a code sorcerer from Kenya’s tech
           wonderland. With 2+ years of enchanting experience, I’ve spun digital
           spells that dance across screens. My web potions? Top-notch! My mobile
@@ -54,22 +55,22 @@ export function About() {
           all ears (and a few lines of code). Remember, bugs are just
           misunderstood features waiting for a little magic. 🪄✨
         </p>
-        <div className="gap:6 my-[65px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-7 lg:gap-10">
+        <div className="gap:6 my-[65px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-7 lg:gap-16">
           {stackIcons.map((stack, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center rounded-[20px] bg-transparent py-10 border-2 border-[#4055C0] hover:bg-[#D9D9D9] hover:border-transparent"
+              className="flex flex-col items-center justify-center rounded-[20px] bg-[#12243a] py-6 border-[0px] border-[#4055C0] hover:bg-[#D9D9D9] hover:border-transparent"
             >
               <Image
                 src={stack.name}
                 alt="stack"
-                height={ 60}
-                width={60}
+                height={ 45}
+                width={45}
               />
             </div>
           ))}
         </div>
-        <Button className="mt-10 flex h-[60px] w-[300px]  flex-row gap-3 rounded-[120px] bg-[#4055C0] hover:bg-[#4055D0]">
+        <Button className="mt-1 flex h-[60px] w-[300px]  flex-row gap-3 rounded-[120px] bg-[#4055D0] hover:bg-[#4055D0]">
           <h1 className="text-[18px] text-white">Download Resume</h1>
           <Download size={20} />
         </Button>

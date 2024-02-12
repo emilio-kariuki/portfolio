@@ -42,7 +42,7 @@ function MeCard() {
         Currently working at Fourbic
       </p>
       <div className="mt-[100px] flex flex-row items-center justify-start gap-11">
-        <Button className="h-[80px] w-[400px] rounded-[120px] bg-white  hover:bg-[#D9D9D9]">
+        <Button className="h-[70px] w-[400px] rounded-[120px] bg-white  hover:bg-[#D9D9D9]">
           <h1 className="text-[18px] text-[#0C1927]">Connect Me</h1>
         </Button>
         <div className="w-[30px]"></div>

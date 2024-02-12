@@ -1,4 +1,3 @@
-import Profile from "~/assets/profile.png";
 import {
     Avatar,
     AvatarFallback,
@@ -8,7 +7,7 @@ import {
 export function Logo() {
     return (
         <Avatar>
-            <AvatarImage src="http://emiliok.vercel.app/profile.png" alt="@shadcn" />
+            <AvatarImage src="http://emiliok.vercel.app/profile.png" alt="@profile" />
             <AvatarFallback>PR</AvatarFallback>
         </Avatar>
     );

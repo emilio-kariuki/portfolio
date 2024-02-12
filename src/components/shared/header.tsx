@@ -2,7 +2,6 @@
 
 import * as React from "react";
 
-import { usePathname } from "next/navigation";
 import  Link  from "next/link";
 import { cn } from "~/lib/utils";
 import {
@@ -33,7 +32,6 @@ const links = [
 ];
 
 export default function Header() {
-  const activePath = usePathname();
 
   return (
     <nav
