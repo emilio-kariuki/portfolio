@@ -8,7 +8,7 @@ import {
 export function Logo() {
     return (
         <Avatar>
-            <AvatarImage src="https://" alt="@shadcn" />
+            <AvatarImage src="http://emiliok.vercel.app/profile.png" alt="@shadcn" />
             <AvatarFallback>PR</AvatarFallback>
         </Avatar>
     );
