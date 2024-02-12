@@ -5,7 +5,7 @@ import { Skills } from "./skills";
 
 export default function Home() {
   return (
-    <main className="h-full w-full ">
+    <main className="h-full w-full bg-[#0C1927]">
         <Introduction />
         <About />
         <Skills />

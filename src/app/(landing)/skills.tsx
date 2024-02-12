@@ -61,7 +61,7 @@ export function Skills() {
     <section className="relative">
       <div className="flex flex-col items-center justify-center py-16 ">
         <h1
-          className={`text-[40px] font-bold text-[#0C1927] ${quickSand.className}`}
+          className={`text-[40px] font-bold text-white ${quickSand.className}`}
         >
           Skills & Stacks
         </h1>
@@ -82,7 +82,7 @@ function SkillCard() {
       {stacks.map((stack, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center rounded-[40px] bg-[#0C1927] px-10 py-10"
+          className="flex flex-col items-center justify-center rounded-[40px] bg-[#0C1927] px-10 py-10 border-[0.1px] border-[#4d4f5b]"
         >
           <div
             className={`rounded-full ${index === 0 ? "bg-[#4055C0]" : index === 1 ? "bg-[#FF4901]" : index === 2 ? "bg-[#0AB987]" : index === 3 ? "bg-[#B80E42]" : "bg-[#FF4901]"} p-4`}

@@ -38,7 +38,7 @@ const stackIcons = [
 export function About() {
   return (
     <section className="relative">
-      <div className="mx-10 flex flex-col rounded-[40px] bg-[#0C1927]  px-16  py-10">
+      <div className="mx-10 flex flex-col rounded-[40px] bg-[#0C1927]  px-16  py-10 border-[0.1px] border-[#4d4f5b]">
         <h1
           className={`text-[40px] font-bold text-white ${quickSand.className}`}
         >

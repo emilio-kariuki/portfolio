@@ -9,14 +9,14 @@ import { Github, Twitter, Linkedin } from "lucide-react";
 export function Introduction() {
   return (
     <section className="relative">
-      <div className="flex flex-row  gap-8 px-10 py-10 sm:flex-col md:flex-row  lg:flex-row">
+      <div className="flex flex-row  gap-8 px-10 py-10 sm:flex-col md:flex-row  lg:flex-row ">
         <MeCard />
         <Image
           src={Profile}
           alt="Profile"
           height={550}
           width={400}
-          className="rounded-[40px]"
+          className="rounded-[40px] "
         />
       </div>
     </section>
@@ -26,7 +26,7 @@ export function Introduction() {
 function MeCard() {
   return (
     <div
-      className={`flex flex-col rounded-[40px] bg-[#0C1927] px-16 py-16 `}
+      className={`flex flex-col rounded-[40px] bg-[#0C1927] px-16 py-16 border-[0.1px] border-[#4d4f5b] `}
     >
       <h1 className={`text-[40px] font-bold text-white ${quickSand.className}`}>
         Hi, am Emilio, a Software Engineer, with 2+ Years of Experience

@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <nav
       className={cn(
-        "mn-w-[] z-30 flex w-full items-center bg-[#ffffff] px-3",
+        "mn-w-[] z-30 flex w-full items-center bg-[#0C1927] px-3",
         "sticky top-0",
       )}
     >
@@ -54,7 +54,7 @@ export default function Header() {
                 <Link legacyBehavior passHref href={link.href}>
                   <NavigationMenuLink
                     className={cn(
-                      "rounded-3xl px-3 py-2 text-base font-normal transition-colors"
+                      "rounded-3xl px-3 py-2 text-base text-white font-normal transition-colors"
                       
                     )}
                   >
