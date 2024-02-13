@@ -5,11 +5,11 @@ import { Skills } from "./skills";
 
 export default function Home() {
   return (
-    <main className="h-full w-full dark:bg-[#0C1927] light:bg-[#FDFCFA]">
-        <Introduction />
-        <About />
-        <Skills />
-        <Footer />
+    <main className="light:bg-[#FDFCFA] h-full w-full px-[170px]">
+      <Introduction />
+      <About />
+      <Skills />
+      <Footer />
     </main>
   );
 }

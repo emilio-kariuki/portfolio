@@ -45,7 +45,7 @@ export default function Header() {
   return (
     <nav
       className={cn(
-        "mn-w-[] z-30 flex w-full items-center bg-[#FAFBFC] dark:bg-[#0C1927] px-3",
+        "mn-w-[] z-30 flex w-full items-center bg-[#FAFBFC] dark:bg-[#030b20] px-[160px]",
         "sticky top-0",
       )}
     >
@@ -75,7 +75,7 @@ export default function Header() {
         </NavigationMenu>
         <div className="flex items-center justify-center gap-4">
         <button
-            className="border-[1px] border-[#cccccc] light:border-[#0C1927] p-3  transition-colors rounded-[8px]"
+            className="border-[0.2px] border-[#363535] light:border-[#0C1927] p-3  transition-colors rounded-[8px]"
             onClick={() => {
               window.open("https://github.com/emilio-kariuki/portfolio.git");
             }}
@@ -89,7 +89,7 @@ export default function Header() {
             }
           </button>
           <button
-            className="border-[1px] border-[#cccccc] light:border-[#0C1927] p-3  transition-colors rounded-[8px]"
+            className="border-[0.2px] border-[#363535] light:border-[#0C1927] p-3  transition-colors rounded-[8px]"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             {

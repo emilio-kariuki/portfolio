@@ -19,7 +19,7 @@ import { useTheme } from "next-themes";
 export function Introduction() {
   return (
     <section className="relative">
-      <div className="flex flex-row  gap-8 px-10 py-10 sm:flex-col md:flex-row  lg:flex-row ">
+      <div className="flex flex-row  gap-8 py-10 sm:flex-col md:flex-row  lg:flex-row ">
         <MeCard />
         <Image
           src={Profile}
@@ -37,7 +37,7 @@ function MeCard() {
   const { theme } = useTheme();
   return (
     <div
-      className={`flex flex-col rounded-[40px] border-[#4d4f5b] bg-[#fafbfc]  px-16 py-16 dark:border-[0.1px] dark:bg-[#0D1B2B] `}
+      className={`flex flex-col rounded-[40px] border-[#363535] bg-[#F5F6F8]  px-16 py-16 dark:border-[0.1px] dark:bg-[#030b20] `}
     >
       <h1
         className={`light:text-[#0C1927] text-[40px] font-bold dark:text-white ${quickSand.className}`}
@@ -51,10 +51,10 @@ function MeCard() {
         product, and always looking for new challenges. When am not coding am
         either travelling, reading or watching memes.
       </p>
-      <p className="light: mt-[50px] text-[25px] font-semibold text-[#0C1927] dark:text-[#D9D9D9]">
+      <p className="light: mt-[40px] text-[25px] font-semibold text-[#0C1927] dark:text-[#D9D9D9]">
         Currently working at Fourbic
       </p>
-      <div className="mt-[100px] flex flex-row items-center justify-start gap-11">
+      <div className="mt-[80px] flex flex-row items-center justify-start gap-11">
         <Button className="h-[70px] w-[400px] rounded-[120px] bg-[#4055C0] hover:bg-[#4d66e3]">
           <h1 className="text-[15px] text-[#ffffff]">Connect With Me</h1>
         </Button>
@@ -66,8 +66,8 @@ function MeCard() {
                 alt="twitter"
                 height={30}
                 width={30}
-                className="fill-white"
-              />
+
+                />
               <Image src={Github_dark} alt="github" height={40} width={40} />
               <Image
                 src={LinkedIn_dark}

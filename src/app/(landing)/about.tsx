@@ -43,7 +43,7 @@ export function About() {
   ];
   return (
     <section className="relative">
-      <div className="mx-10 flex flex-col rounded-[40px] border-[#4d4f5b] bg-[#F5F6F8] px-16  py-10  dark:border-[0.1px] dark:bg-[#0D1B2B] ">
+      <div className="flex flex-col rounded-[40px] border-[#363535] bg-[#F5F6F8] px-16  py-10  dark:border-[0.1px] dark:bg-[#030b20] ">
         <h1
           className={`light:text-[#4055C0] text-[40px] font-bold dark:text-white ${quickSand.className}`}
         >
@@ -61,7 +61,7 @@ export function About() {
           all ears (and a few lines of code). Remember, bugs are just
           misunderstood features waiting for a little magic. 🪄✨
         </p>
-        <div className="gap:6 my-[65px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-7 lg:gap-16">
+        <div className="gap:6 my-[65px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-7 lg:gap-10">
           {stackIcons.map((stack, index) => (
             <div
               key={index}

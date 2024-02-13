@@ -28,7 +28,7 @@ const footerRoutes = [
 export function Footer() {
   return (
     <section className="relative">
-      <div className=" mx-10  flex flex-row items-center  justify-between dark:bg-[#0C1927] light:bg-[#F6F7FE]  p-6 border-t-[0.4px] border-[#4d4f5b] ">
+      <div className="flex flex-row items-center  justify-between  light:bg-[#F6F7FE]  py-6 border-t-[0.4px] border-[#4d4f5b] ">
         <div className="flex flex-col items-start justify-start gap-2">
         <div className="grid grid-cols-5 gap-10 ">
           {footerRoutes.map((route, index) => (
@@ -42,7 +42,7 @@ export function Footer() {
           ))}
         </div>
        
-        <span className="text-center text-gray-600">
+        <span className="text-center text-[13px] text-gray-600">
           &copy; {new Date().getFullYear()} Emilio Kariuki . All rights reserved.
         </span>
         </div>
