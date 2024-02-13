@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { Inter } from "next/font/google";
 import Header from "~/components/shared/header";
 import { Providers } from "~/lib/providers";
+import {SpeedInsights} from "@vercel/speed-insights/next"
 
 
 
@@ -25,6 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
+      <SpeedInsights />
       <body className={`overscroll-none font-sans ${inter.variable}`}>
         <Providers>
         <Header />
