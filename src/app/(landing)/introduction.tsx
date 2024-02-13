@@ -55,7 +55,7 @@ function MeCard() {
         Currently working at Fourbic
       </p>
       <div className="mt-[80px] flex flex-row items-center justify-start gap-11">
-        <Button className="h-[70px] w-[400px] rounded-[120px] bg-[#4055C0] hover:bg-[#4d66e3]">
+        <Button className="h-[55px] w-[250px] rounded-[120px] bg-[#4055C0] hover:bg-[#4d66e3]">
           <h1 className="text-[15px] text-[#ffffff]">Connect With Me</h1>
         </Button>
         <div className="flex flex-row items-center justify-center gap-5">
