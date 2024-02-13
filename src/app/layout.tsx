@@ -2,6 +2,9 @@ import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
 import Header from "~/components/shared/header";
+import { Providers } from "~/lib/providers";
+
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,8 +26,10 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body className={`overscroll-none font-sans ${inter.variable}`}>
+        <Providers>
         <Header />
-        <main>{children}</main>
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );

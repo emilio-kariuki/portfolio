@@ -61,7 +61,7 @@ export function Skills() {
     <section className="relative">
       <div className="flex flex-col items-center justify-center py-16 ">
         <h1
-          className={`text-[40px] font-bold text-white ${quickSand.className}`}
+          className={`light:text-[#0C1927] text-[40px] font-bold dark:text-white ${quickSand.className}`}
         >
           Skills & Stacks
         </h1>
@@ -82,7 +82,8 @@ function SkillCard() {
       {stacks.map((stack, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center rounded-[40px] bg-[#0C1927] px-10 py-10 border-[0.1px] border-[#4d4f5b]"
+          className="flex transform cursor-pointer flex-col items-center justify-center rounded-[40px] border-[#4d4f5b]  bg-[#F5F6F8] px-10 py-6  
+          dark:bg-[#0D1B2B]"
         >
           <div
             className={`rounded-full ${index === 0 ? "bg-[#4055C0]" : index === 1 ? "bg-[#FF4901]" : index === 2 ? "bg-[#0AB987]" : index === 3 ? "bg-[#B80E42]" : "bg-[#FF4901]"} p-4`}
@@ -90,12 +91,12 @@ function SkillCard() {
             <Image src={stack.icon} alt={stack.name} height={80} width={80} />
           </div>
           <h1
-            className={`py-3 text-3xl font-semibold text-white ${quickSand.className}`}
+            className={`light:text-[#0C1927] py-3 text-3xl font-semibold dark:text-white ${quickSand.className}`}
           >
             {stack.name}
           </h1>
           <ul
-            className={`text-[16px]  mt-2 text-white ${quickSandRegular.className}`}
+            className={`light:text-[#0C1927]  mt-2 text-[16px] dark:text-white ${quickSandRegular.className}`}
           >
             {stack.tasks.map((task, index) => (
               <React.Fragment key={index}>
