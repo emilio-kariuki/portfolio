@@ -1,10 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable react/no-unescaped-entities */
 
 import Image from "next/image";
 import { inter, quickSand } from "~/lib/font";
 import Profile from "~/assets/profile.png";
 import { Button } from "~/components/ui/button";
-import { Github, Twitter, Linkedin } from "lucide-react";
+
+import Twitter from "~/assets/twitter_white.svg";
+import Github from "~/assets/github_white.svg";
+import LinkedIn from "~/assets/linkedin_white.svg";
 
 export function Introduction() {
   return (
@@ -26,7 +30,7 @@ export function Introduction() {
 function MeCard() {
   return (
     <div
-      className={`flex flex-col rounded-[40px] bg-[#0C1927] px-16 py-16 border-[0.1px] border-[#4d4f5b] `}
+      className={`flex flex-col rounded-[40px] border-[0.1px] border-[#4d4f5b] bg-[#0C1927] px-16 py-16 `}
     >
       <h1 className={`text-[40px] font-bold text-white ${quickSand.className}`}>
         Hi, am Emilio, a Software Engineer, with 2+ Years of Experience
@@ -42,13 +46,12 @@ function MeCard() {
         Currently working at Fourbic
       </p>
       <div className="mt-[100px] flex flex-row items-center justify-start gap-11">
-        <Button className="h-[70px] w-[400px] rounded-[120px] bg-white  hover:bg-[#D9D9D9]">
-          <h1 className="text-[18px] text-[#0C1927]">Connect Me</h1>
+        <Button className="h-[70px] w-[400px] rounded-[120px] bg-[#4055C0] hover:bg-[#4d66e3]">
+          <h1 className="text-[18px] text-[#ffffff]">Connect Me</h1>
         </Button>
-        <div className="w-[30px]"></div>
-        <Github size={30} color="#ffffff" />
-        <Twitter size={30} color="#ffffff" />
-        <Linkedin size={30} color="#ffffff" />
+        <Image src={Github} alt="@github" className="w-[45px]= h-[45px]" />
+        <Image src={LinkedIn} alt="@github" className="h-[45px] w-[45px]" />
+        <Image src={Twitter} alt="@github" className="h-[40px] w-[40px]" />
       </div>
     </div>
   );

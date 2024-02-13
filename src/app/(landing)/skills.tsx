@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { inter, quickSand } from "~/lib/font";
+import { inter, quickSand, quickSandRegular } from "~/lib/font";
 import Image from "next/image";
 import { Check } from "lucide-react";
 
@@ -95,7 +95,7 @@ function SkillCard() {
             {stack.name}
           </h1>
           <ul
-            className={`text-[16px] font-regular mt-2 text-white ${quickSand.className}`}
+            className={`text-[16px]  mt-2 text-white ${quickSandRegular.className}`}
           >
             {stack.tasks.map((task, index) => (
               <React.Fragment key={index}>
