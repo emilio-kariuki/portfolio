@@ -4,7 +4,7 @@ import Picsa from "~/assets/picsa.png";
 import GDSC from "~/assets/dsc.svg";
 import Image from "next/image";
 import { Footer } from "../(landing)/footer";
-
+import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
 const projects = [
   {
     name: "GDSC Dekut",
@@ -75,8 +75,16 @@ export default function Projects() {
               key={index}
               className="flex flex-col items-start justify-start gap-2"
             >
-              <div className="rounded-[15px] border-[0.2px] border-[#363535] p-10 hover:bg-[#ffffff] dark:hover:bg-[#030b20]">
+              <div className="rounded-[15px] border-[0.2px] border-[#363535] p-5 hover:bg-[#ffffff] dark:hover:bg-[#030b20]">
+              <Avatar className="h-[45px] w-[45px] mb-3">
+                    <AvatarImage
+                      src="http://emiliok.vercel.app/dsc.svg"
+                      alt="@profile"
+                    />
+                    <AvatarFallback>P</AvatarFallback>
+                  </Avatar>
                 <div className="flex flex-row items-center justify-start gap-2 ">
+                  
                   <h1
                     className={`light:text-[#0C1927] text-[25px] font-bold dark:text-white ${quickSand.className}`}
                   >
@@ -101,7 +109,7 @@ export default function Projects() {
                     </div>
                   ))}
                 </div>
-                <div className="flex mt-5">
+                <div className="mt-5 flex">
                   <a
                     href={project.link}
                     className="light:text-[#4055C0]  text-[16px] font-bold dark:text-[#0AB987]"
