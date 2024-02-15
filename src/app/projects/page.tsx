@@ -5,13 +5,14 @@ import GDSC from "~/assets/dsc.svg";
 import Image from "next/image";
 import { Footer } from "../(landing)/footer";
 import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
+import { Link } from "lucide-react";
 const projects = [
   {
     name: "GDSC Dekut",
     dlink: "gdsc.community.dev",
     description:
       "A community of developers at DeKUT, where we learn and grow together.",
-    image: GDSC,
+    image: "http://emiliok.vercel.app/dsc.svg",
     link: "https://gdsc.community.dev/dekut/",
     stack: ["Flutter", "Firebase", "Git"],
   },
@@ -20,7 +21,7 @@ const projects = [
     dlink: "picsa.pro",
     description:
       "A photo sharing app that allows users to share their photos with the world.",
-    image: Picsa,
+    image: "http://emiliok.vercel.app/picsa.png",
     link: "https://www.picsa.pro/",
     stack: ["Next.js", "Supabase", "Expo"],
   },
@@ -29,7 +30,7 @@ const projects = [
     dlink: "gdsc.community.dev",
     description:
       "A community of developers at DeKUT, where we learn and grow together.",
-    image: GDSC,
+    image: "http://emiliok.vercel.app/dsc.svg",
     link: "https://gdsc.community.dev/dekut/",
     stack: ["Flutter", "Firebase", "Git"],
   },
@@ -38,7 +39,7 @@ const projects = [
     dlink: "picsa.pro",
     description:
       "A photo sharing app that allows users to share their photos with the world.",
-    image: Picsa,
+    image: "http://emiliok.vercel.app/picsa.png",
     link: "https://www.picsa.pro/",
     stack: ["Next.js", "Supabase", "Expo"],
   },
@@ -47,7 +48,7 @@ const projects = [
     dlink: "picsa.pro",
     description:
       "A photo sharing app that allows users to share their photos with the world.",
-    image: Picsa,
+    image: "http://emiliok.vercel.app/dsc.svg",
     link: "https://www.picsa.pro/",
     stack: ["Next.js", "Supabase", "Expo"],
   },
@@ -76,15 +77,11 @@ export default function Projects() {
               className="flex flex-col items-start justify-start gap-2"
             >
               <div className="rounded-[15px] border-[0.2px] border-[#363535] p-5 hover:bg-[#ffffff] dark:hover:bg-[#030b20]">
-              <Avatar className="h-[45px] w-[45px] mb-3">
-                    <AvatarImage
-                      src="http://emiliok.vercel.app/dsc.svg"
-                      alt="@profile"
-                    />
-                    <AvatarFallback>P</AvatarFallback>
-                  </Avatar>
+                <Avatar className="mb-3 h-[45px] w-[45px]">
+                  <AvatarImage src={project.image} alt="@profile" />
+                  <AvatarFallback>P</AvatarFallback>
+                </Avatar>
                 <div className="flex flex-row items-center justify-start gap-2 ">
-                  
                   <h1
                     className={`light:text-[#0C1927] text-[25px] font-bold dark:text-white ${quickSand.className}`}
                   >
@@ -109,12 +106,13 @@ export default function Projects() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-5 flex">
+                <div className="mt-5 flex flex-row gap-2 items-center justify-start">
+                  <Link size={14} color="#0AB987"  />
                   <a
                     href={project.link}
-                    className="light:text-[#4055C0]  text-[16px] font-bold dark:text-[#0AB987]"
+                    className="light:text-[#4055C0]  text-[14px] font-bold dark:text-[#0AB987]"
                   >
-                    @{project.dlink}
+                    {project.dlink}
                   </a>
                 </div>
               </div>

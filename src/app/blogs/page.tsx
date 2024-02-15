@@ -1,7 +1,8 @@
-export default function Blogs(){
+
+export default function BlogsPage(){
     return (
-        <main>
-            <h1>Blog Page</h1>
+        <main className="h-full w-full">
+           <h1>Blogs</h1>
         </main>
     )
 }
