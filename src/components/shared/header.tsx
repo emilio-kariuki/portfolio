@@ -31,10 +31,6 @@ const links = [
     href: "/projects",
   },
   {
-    label: "About",
-    href: "/about",
-  },
-  {
     label: "Blogs",
     href: "/blogs",
   },

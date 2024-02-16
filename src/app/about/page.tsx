@@ -1,7 +1,9 @@
 export default function About() {
-    return (
-        <main>
-            <h1>About Page</h1>
-        </main>
-    )
+  return (
+    <section className="relative">
+      <div className="mx-[170px] my-10 flex flex-col">
+
+      </div>
+    </section>
+  )
 }

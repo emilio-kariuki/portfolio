@@ -18,40 +18,40 @@ const stacks = [
       "Using Flutter to deploy cross-platform application for android, ios , desktop and web.",
       "Building with react native, using react native expo library using typescript and javascript.",
       "Deploying the android applications to Google Play store both for production and testing purposes.",
-      "Deploying the android applications to Google Play store both for production and testing purposes.",
+      "Using code push to deploy updates to the android applications."
     ],
   },
   {
     name: "Web Development",
     icon: Web,
     tasks: [
-      "Experience in creating both android and ios applications with a pleasing UI and UX experience.",
-      "Using Flutter to deploy cross-platform application for android, ios , desktop and web.",
-      "Building with react native, using react native expo library using typescript and javascript.",
-      "Deploying the android applications to Google Play store both for production and testing purposes.",
-      "Deploying the android applications to Google Play store both for production and testing purposes.",
+      "Proficient in creating responsive web applications using react, nextjs, gatsby and other modern web technologies.",
+      "Experience with integrating web applications with third-party APIs and services.",
+      "Using tailwindcss to create responsive and modern web applications.",
+      "Deploying web applications to vercel, netlify and other modern web hosting platforms.",
+      "CI/CD with github actions and other modern CI/CD tools.",
     ],
   },
   {
     name: "Backend Development",
     icon: Backend,
     tasks: [
-      "Experience in creating both android and ios applications with a pleasing UI and UX experience.",
-      "Using Flutter to deploy cross-platform application for android, ios , desktop and web.",
-      "Building with react native, using react native expo library using typescript and javascript.",
-      "Deploying the android applications to Google Play store both for production and testing purposes.",
-      "Deploying the android applications to Google Play store both for production and testing purposes.",
+      "Experience in creating backend services using nodejs, expressjs, nestjs and other modern backend technologies.",
+      "Creating and deploying RESTful and GraphQL APIs.",
+      "Experience with creating and deploying microservices.",
+      "Using docker and kubernetes to deploy and manage backend services.",
+      "Experience with creating and deploying serverless functions.",
     ],
   },
   {
     name: "Mobile & Web Design",
     icon: Design,
     tasks: [
-      "Experience in creating both android and ios applications with a pleasing UI and UX experience.",
-      "Using Flutter to deploy cross-platform application for android, ios , desktop and web.",
-      "Building with react native, using react native expo library using typescript and javascript.",
-      "Deploying the android applications to Google Play store both for production and testing purposes.",
-      "Deploying the android applications to Google Play store both for production and testing purposes.",
+      "Experience in creating modern and responsive UI/UX designs for mobile and web applications.",
+      "Using figma and adobe XD to create and prototype UI/UX designs.",
+      "Creating and deploying modern and responsive web designs using tailwindcss.",
+      "Experience with creating and deploying modern and responsive mobile designs using flutter and react native.",
+      "Creating and deploying modern and responsive web designs using tailwindcss.",
     ],
   },
 ];
@@ -82,7 +82,7 @@ function SkillCard() {
       {stacks.map((stack, index) => (
         <div
           key={index}
-          className="flex transform cursor-pointer flex-col items-center justify-center rounded-[40px] dark:border-[0.2px] border-[#363535]  bg-[#F5F6F8] px-10 py-6  
+          className="flex transform cursor-pointer flex-col items-center justify-center rounded-[40px] dark:border-[0.2px] border-[#363535]  bg-[#F5F6F8] px-10 py-6
           dark:bg-[#030b20]"
         >
           <div
@@ -100,7 +100,7 @@ function SkillCard() {
           >
             {stack.tasks.map((task, index) => (
               <React.Fragment key={index}>
-                <div className="flex flex-row items-center justify-center">
+                <div className="flex flex-row items-center justify-start">
                   <div className="mr-5 items-center justify-center rounded-full bg-[#21C55E] p-1">
                     <Check size={15} />
                   </div>

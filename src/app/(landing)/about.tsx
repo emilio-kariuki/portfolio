@@ -49,17 +49,16 @@ export function About() {
         >
           About Me
         </h1>
-        
+
         <p className="light:text-[#0C1927] mt-[40px] text-[16px] font-medium dark:text-[#D9D9D9]">
-          👾 Hey there! I’m Emilio 👾, a code sorcerer from Kenya’s tech
-          wonderland. With 2+ years of enchanting experience, I’ve spun digital
-          spells that dance across screens. My web potions? Top-notch! My mobile
-          elixirs? Pure magic! 🚀 When the moon rises, I wield my keyboard like
-          Excalibur, crafting apps that sparkle. Off-duty, I sip chai, chase
-          sunsets, and plot world domination (or at least a killer app). Let’s
-          connect—tech talk, cat memes, or inter-dimensional travel tips, I’m
-          all ears (and a few lines of code). Remember, bugs are just
-          misunderstood features waiting for a little magic. 🪄✨
+          I am a passionate software developer with a strong interest in
+          developing mobile applications. I have been working with Flutter for
+          the past 2 years and have developed a strong understanding of the
+          framework. I have also worked with React Native and Next.js. I am
+          always eager to learn new technologies and have a strong interest in
+          developing web applications. I am also a UI/UX enthusiast and have
+          experience working with Figma.
+
         </p>
         <div className="gap:6 my-[65px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-7 lg:gap-10">
           {stackIcons.map((stack, index) => (
