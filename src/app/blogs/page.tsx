@@ -51,12 +51,12 @@ export default function BlogsPage() {
     <section >
       <div className="mx-[15px] lg:mx-[170px] md:mx-[90px] my-10 flex flex-col">
         <h1
-          className={`light:text-[#0C1927] mx-auto mx-w-[1000px] text-center lg:text-start md:text-start xl:text-start text-[30px] lg:text-[40px] md:text-[40px] xl:text-[40px] dark:text-white  ${quickSand.className}`}
+          className={`light:text-[#0C1927] max-w-[1000px] text-center lg:text-start md:text-start xl:text-start text-[30px] lg:text-[40px] md:text-[40px] xl:text-[40px] dark:text-white  ${quickSand.className}`}
         >
           Sometimes writing code without sharing some gems is like cooking a
           delicious meal and not sharing it with anyone.
         </h1>
-        <p className="light:text-[#0C1927] my-2 lg:my-5 mt-4 lg:mt-0 md:mt-0 xl:mt-0 2xl:mt-0 md:my-5 mx-auto mx-w-[700px] text-center lg:text-start md:text-start xl:text-start  text-[15px] lg:text-[20px] md:text-[20px] xl:text-[20px] 2xl:text-[20px] dark:text-[#827c7c]">
+        <p className="light:text-[#0C1927] my-2 lg:my-5 mt-4 lg:mt-1 md:mt-1 xl:mt-1 2xl:mt-1 md:my-5 max-w-[700px]  text-center lg:text-start md:text-start xl:text-start  text-[15px] lg:text-[18px] md:text-[18px] xl:text-[18px] 2xl:text-[18px] dark:text-[#827c7c]">
           I have been writing code for a while now and I have learned a lot of
           things that I think are worth sharing. I have written a few articles
           on medium and hashnode. I will be sharing some of them here. I hope you
