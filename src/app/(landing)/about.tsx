@@ -64,7 +64,7 @@ export function About() {
           {stackIcons.map((stack, index) => (
             <div
               key={index}
-              className="flex  flex-col items-center justify-center rounded-[20px] bg-[#fafbfc]  py-10 dark:bg-[#112439]"
+              className="flex flex-col items-center justify-center rounded-[20px] bg-[#fafbfc]  py-10 px-10 dark:bg-[#112439]"
             >
               <Image src={stack.name} alt="stack" height={45} width={45} />
             </div>

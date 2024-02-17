@@ -5,22 +5,11 @@ import * as React from "react";
 
 import Link from "next/link";
 import { cn } from "~/lib/utils";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from "../ui/navigation-menu";
 import { Logo } from "./logo";
 import { useTheme } from "next-themes";
 import { MoonStar, Sun, Github } from "lucide-react";
-import Github_white from "~/assets/github_white.svg";
-import Github_dark from "~/assets/github.svg";
-import Image from "next/image";
 import { MobileMenu } from "./mobile-header";
 import { DesktopMenu } from "./desktop-header";
-
-
 
 
 const links = [
