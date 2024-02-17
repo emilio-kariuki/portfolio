@@ -1,18 +1,18 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { inter, quickSand, quickSandRegular } from "~/lib/font";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Picsa from "~/assets/picsa.png";
 import GDSC from "~/assets/placeholder.svg";
-import Image from "next/image";
-import { Footer } from "../(landing)/footer";
 import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
-import { Link } from "lucide-react";
+import { inter, quickSand, quickSandRegular } from "~/lib/font";
+import { Footer } from "../(landing)/footer";
 const projects = [
   {
     name: "GDSC Dekut",
     dlink: "gdsc.community.dev",
     description:
       "A community of developers at DeKUT, where we learn and grow together.",
-    image: "http://emiliok.vercel.app/profile.svg",
+    image: "http://emiliok.vercel.app/profile.png",
     link: "https://gdsc.community.dev/dekut/",
     stack: ["Flutter", "Firebase", "Git"],
   },
@@ -30,7 +30,7 @@ const projects = [
     dlink: "gdsc.community.dev",
     description:
       "A community of developers at DeKUT, where we learn and grow together.",
-    image: "http://emiliok.vercel.app/profile.svg",
+    image: "http://emiliok.vercel.app/profile.png",
     link: "https://gdsc.community.dev/dekut/",
     stack: ["Flutter", "Firebase", "Git"],
   },
@@ -48,7 +48,7 @@ const projects = [
     dlink: "picsa.pro",
     description:
       "A photo sharing app that allows users to share their photos with the world.",
-    image: "http://emiliok.vercel.app/profile.svg",
+    image: "http://emiliok.vercel.app/profile.png",
     link: "https://www.picsa.pro/",
     stack: ["Next.js", "Supabase", "Expo"],
   },
@@ -80,7 +80,7 @@ export default function Projects() {
 
                 <div className="flex flex-row items-center justify-start gap-2 ">
                   <h1
-                    className={`light:text-[#0C1927] text-[20px] lg:text-[25px] md:text-[25px] xl:text-[25px] font-bold dark:text-white ${quickSand.className}`}
+                    className={`light:text-[#0C1927] text-[17px] lg:text-[20px] md:text-[20px] 2xl:text-[20px] font-bold dark:text-white ${inter.className}`}
                   >
                     {project.name}
                   </h1>
@@ -103,23 +103,23 @@ export default function Projects() {
                     </div>
                   ))}
                 </div>
-                <div className="mx-auto h-[160px] xl:h-[240px] relative">
+                <div className="mx-auto h-[160px] lg:h-[160px] md:h-[160px] 2xl:h-[240px] relative">
                   <Image
                     src={project.image}
                     alt="@project_image"
                     layout="fill"
                     objectFit="cover"
-                    className="rounded-[8px]"
+                    className="rounded-[5px]"
                   />
                   </div>
-                <div className="mt-5 flex flex-row gap-2 items-center justify-start">
-                  <Link size={14} color="#0AB987"  />
+                <div className="mt-5 flex flex-row gap-1 items-center justify-start hover:underline transition-all duration-300 ease-in-out">
                   <a
                     href={project.link}
-                    className="light:text-[#4055C0]  text-[14px] font-bold dark:text-[#0AB987]"
+                    className="light:text-[#4055C0]  text-[14px] font-medium dark:text-[#0AB987] "
                   >
-                    {project.dlink}
+                    See more
                   </a>
+                   <ArrowRight size={15} className="light:text-[#4055C0]" />
                 </div>
               </div>
             </div>

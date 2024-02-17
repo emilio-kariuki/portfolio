@@ -64,10 +64,7 @@ export default function BlogsPage() {
           programming and software development in general.
         </p>
         <div className="h-4"></div>
-        <h1
-          className={`light:text-[#0C1927] text-[40px] dark:text-white pb-1 lg:pb-6 md:pb-6 xl:pb-6 ${quickSand.className}`}>
-          My Articles
-        </h1>
+
         {/* <div className="h-4"></div> */}
         {/* <div id="search">
           <input

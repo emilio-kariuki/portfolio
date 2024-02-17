@@ -43,14 +43,14 @@ export function About() {
   ];
   return (
     <section className="relative">
-      <div className="flex flex-col rounded-[40px] border-[#363535] bg-[#F5F6F8] px-16  py-10  dark:border-[0.1px] dark:bg-[#030b20] ">
+      <div className="flex flex-col items-center lg:items-start md:items-start 2xl:items-start  rounded-[20px] border-[#363535] bg-[#F5F6F8] px-4 py-6 lg:px-16 lg:py-16 md:px-16 md:py-16 2xl:px-16 2xl:py-16  dark:border-[0.1px] dark:bg-[#030b20] ">
         <h1
-          className={`light:text-[#4055C0] text-[40px] font-bold dark:text-white ${quickSand.className}`}
+          className={`light:text-[#4055C0] text-[25px] lg:text-[40px] md:text-[40px] 2xl:text-[40px] font-bold dark:text-white ${quickSand.className}`}
         >
           About Me
         </h1>
 
-        <p className="light:text-[#0C1927] mt-[40px] text-[16px] font-medium dark:text-[#D9D9D9]">
+        <p className="light:text-[#0C1927] text-center lg:text-start md:text-start 2xl:text-start mt-4 lg:mt-[40px] text-[14px] font-light lg:font-medium md:font-medium 2xl:font-medium dark:text-[#D9D9D9]">
           I am a passionate software developer with a strong interest in
           developing mobile applications. I have been working with Flutter for
           the past 2 years and have developed a strong understanding of the
@@ -60,7 +60,7 @@ export function About() {
           experience working with Figma.
 
         </p>
-        <div className="gap:6 my-[65px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-7 lg:gap-10">
+        <div className="hidden lg:grid md:grid 2xl:grid gap:6 my-[65px]  grid-cols-1 sm:grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-7 lg:gap-10">
           {stackIcons.map((stack, index) => (
             <div
               key={index}
@@ -70,8 +70,8 @@ export function About() {
             </div>
           ))}
         </div>
-        <Button className="mt-1 flex h-[60px] w-[300px]  flex-row gap-3 rounded-[120px] bg-[#4055D0] hover:bg-[#4055D0]">
-          <h1 className="text-[15px] text-white">Download Resume</h1>
+        <Button className="mt-5 flex h-[40px] lg:h-[60px] md:h-[60px] 2xl:h-[60px] w-[200px] lg:w-[250px] md:w-[250px] 2xl:w-[250px]   flex-row gap-3 rounded-[120px] bg-[#4055D0] hover:bg-[#4055D0]">
+          <h1 className="text-[12px] lg:text-[15px] md:text-[15px] 2xl:text-[15px] text-white">Download Resume</h1>
           <Download size={20} color="#ffffff" />
         </Button>
       </div>

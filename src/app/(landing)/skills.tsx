@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { inter, quickSand, quickSandRegular } from "~/lib/font";
+import { inter, interRegular, quickSand, quickSandRegular } from "~/lib/font";
 import Image from "next/image";
 import { Check } from "lucide-react";
 
@@ -78,33 +78,33 @@ export function Skills() {
 
 function SkillCard() {
   return (
-    <div className="gap:6 grid grid-cols-1  sm:grid-cols-1 md:grid-cols-2 md:gap-8 lg:grid-cols-2 lg:gap-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-5  md:gap-8 lg:grid-cols-2 ">
       {stacks.map((stack, index) => (
         <div
           key={index}
-          className="flex transform cursor-pointer flex-col items-center justify-center rounded-[40px] dark:border-[0.2px] border-[#363535]  bg-[#F5F6F8] px-10 py-6
+          className="flex transform cursor-pointer flex-col items-center justify-center rounded-[20px] dark:border-[0.2px] border-[#363535]  bg-[#F5F6F8] px-4 py-6 lg:px-16 lg:py-16 md:px-16 md:py-16 2xl:px-16 2xl:py-16
           dark:bg-[#030b20]"
         >
           <div
             className={`rounded-full ${index === 0 ? "bg-[#4055C0]" : index === 1 ? "bg-[#FF4901]" : index === 2 ? "bg-[#0AB987]" : index === 3 ? "bg-[#B80E42]" : "bg-[#FF4901]"} p-4`}
           >
-            <Image src={stack.icon} alt={stack.name} height={80} width={80} />
+            <Image src={stack.icon} alt={stack.name} className="h-[50px] w-[50px] lg:h-[80px] lg:w-[80px] md:h-[80px] md:w-[80px] 2xl:h-[80px] 2xl:w-[80px]  " />
           </div>
           <h1
-            className={`light:text-[#0C1927] py-2 text-3xl font-semibold dark:text-white ${quickSand.className}`}
+            className={`light:text-[#0C1927] py-2 text-[20px] lg:text-[30px] md:text-[30px] 2xl:text-[30px] font-semibold dark:text-white ${quickSand.className}`}
           >
             {stack.name}
           </h1>
           <ul
-            className={`light:text-[#0C1927]   text-[16px] dark:text-white ${quickSandRegular.className}`}
+            className={`light:text-[#0C1927] font-light lg:font-medium md:font-medium 2xl:font-medium text-[14px] lg:text-[16px] md:text-[16px] 2xl:text-[16px] dark:text-white ${quickSandRegular.className}`}
           >
             {stack.tasks.map((task, index) => (
               <React.Fragment key={index}>
                 <div className="flex flex-row items-center justify-start">
-                  <div className="mr-5 items-center justify-center rounded-full bg-[#21C55E] p-1">
-                    <Check size={15} />
+                  <div className="mr-3 items-center justify-center rounded-full bg-[#21C55E] p-1">
+                    <Check size={12} />
                   </div>
-                  <li className="py-2">{task}</li>
+                  <li className="py-2 font-light lg:font-medium md:font-medium 2xl:font-medium">{task}</li>
                 </div>
               </React.Fragment>
             ))}
