@@ -3,17 +3,12 @@
 "use client";
 
 import Image from "next/image";
-import { inter, quickSand } from "~/lib/font";
 import Profile from "~/assets/profile.png";
 import { Button } from "~/components/ui/button";
+import { interRegular, quickSand } from "~/lib/font";
 
-import Twitter_white from "~/assets/twitter_white.svg";
-import Github_white from "~/assets/github_white.svg";
-import LinkedIn_white from "~/assets/linkedin_white.svg";
+import { GithubIcon, LinkedinIcon, TwitterIcon, } from "lucide-react";
 
-import Twitter_dark from "~/assets/twitter.svg";
-import Github_dark from "~/assets/github.svg";
-import LinkedIn_dark from "~/assets/linkedin.svg";
 import { useTheme } from "next-themes";
 
 export function Introduction() {
@@ -29,9 +24,15 @@ export function Introduction() {
             className="rounded-[20px] "
           />
           <div className="flex flex-col gap-2 mt-5">
-            <SocialLine icon={Twitter_dark} title="Follow on Twitter" />
-            <SocialLine icon={Github_dark} title="Follow on Github" />
-            <SocialLine icon={LinkedIn_dark} title="Follow on LinkedIn" />
+            <SocialLine children={
+              <TwitterIcon size={20} />
+            } title="Follow on Twitter" />
+            <SocialLine children={
+              <GithubIcon size={20} />
+            } title="Follow on Github" />
+            <SocialLine children={
+              <LinkedinIcon size={20} />
+            } title="Follow on LinkedIn" />
 
           </div>
         </div>
@@ -41,19 +42,13 @@ export function Introduction() {
 }
 
 function SocialLine(props: {
-  title: string,
-  icon: string
+  children: React.ReactNode
+  title: string
 }) {
   return (
     <div className="block lg:flex md:flex 2xl:flex flex-row items-center justify-start gap-5">
-      <Image
-        src={props.icon}
-        alt="twitter"
-        height={20}
-        width={20}
-        className="fill-white"
-      />
-      <h3 className="text-[16px] font-medium text-black">{props.title}</h3>
+      {props.children}
+      <h3 className={`text-[14px] font-normal light:text-black dark:text-white ${interRegular.className}`}>{props.title}</h3>
     </div>
   )
 }

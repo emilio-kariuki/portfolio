@@ -50,7 +50,7 @@ export function About() {
           About Me
         </h1>
 
-        <p className="light:text-[#0C1927] text-center lg:text-start md:text-start 2xl:text-start mt-4 lg:mt-[40px] text-[14px] font-light lg:font-medium md:font-medium 2xl:font-medium dark:text-[#D9D9D9]">
+        <p className="light:text-[#0C1927] text-center lg:text-start md:text-start 2xl:text-start mt-4 lg:mt-[40px] text-[14px] lg:text-[16px]  md:text-[16px]  2xl:text-[16px] font-light lg:font-medium md:font-medium 2xl:font-medium dark:text-[#D9D9D9]">
           I am a passionate software developer with a strong interest in
           developing mobile applications. I have been working with Flutter for
           the past 2 years and have developed a strong understanding of the
