@@ -56,7 +56,7 @@ export default function BlogsPage() {
           Sometimes writing code without sharing some gems is like cooking a
           delicious meal and not sharing it with anyone.
         </h1>
-        <p className="light:text-[#0C1927] my-2 lg:my-5 mt-5 lg:mt-0 md:mt-0 xl:mt-0 2xl:mt-0 md:my-5 mx-auto mx-w-[700px] text-center lg:text-start md:text-start xl:text-start  text-[16px] lg:text-[20px] md:text-[20px] xl:text-[20px] 2xl:text-[20px] dark:text-[#827c7c]">
+        <p className="light:text-[#0C1927] my-2 lg:my-5 mt-4 lg:mt-0 md:mt-0 xl:mt-0 2xl:mt-0 md:my-5 mx-auto mx-w-[700px] text-center lg:text-start md:text-start xl:text-start  text-[15px] lg:text-[20px] md:text-[20px] xl:text-[20px] 2xl:text-[20px] dark:text-[#827c7c]">
           I have been writing code for a while now and I have learned a lot of
           things that I think are worth sharing. I have written a few articles
           on medium and hashnode. I will be sharing some of them here. I hope you
@@ -77,7 +77,7 @@ export default function BlogsPage() {
 
           />
         </div> */}
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-4 gap-5">
+        <div className="mt-8 grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2 ">
           {blogs.map((blog, index) => (
             <div
               key={index}
