@@ -24,7 +24,7 @@ export function MobileMenu() {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost">
-            <MenuIcon className="h-6 w-6" className="light:text-[#4055C0]" />
+            <MenuIcon className="h-6 w-6 light:text-[#4055C0]" />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-48">
