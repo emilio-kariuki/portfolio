@@ -59,7 +59,7 @@ export default function Header() {
                 <Link legacyBehavior passHref href={link.href}>
                   <NavigationMenuLink
                     className={cn(
-                      "rounded-3xl px-3 py-2 text-base font-normal dark:text-white light:text-[#0C1927] transition-colors",
+                      "rounded-3xl px-3 py-2 text-base font-medium dark:text-white light:text-[#0C1927] transition-colors",
                     )}
                   >
                     {link.label}
@@ -73,7 +73,7 @@ export default function Header() {
         <button
             className="border-[0.2px] border-[#363535] light:border-[#0C1927] p-3  transition-colors rounded-[8px]"
             onClick={() => {
-              window.open("https://github.com/emilio-kariuki/portfolio.git");
+              window.open("https://github.com/emilio-kariuki");
             }}
           >
             {
