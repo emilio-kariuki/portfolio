@@ -22,7 +22,7 @@ export function Footer() {
     <section className="relative">
       <div className="block lg:flex md:flex xl:flex lg:flex-row md:flex-row xl:flex-row items-center justify-center  lg:justify-between md:justify-between xl:justify-between  light:bg-[#F6F7FE]  py-6 border-t-[0.4px] border-[#4d4f5b] ">
         <div className="flex flex-col items-center lg:items-start md:items-start xl:items-start 2xl:items-start justify-start gap-2">
-          <div className="grid grid-cols-5 gap-10 ">
+          <div className="grid grid-cols-3 gap-10 ">
             {footerRoutes.map((route, index) => (
               <a
                 key={index}
