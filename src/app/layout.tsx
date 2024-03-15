@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Emilio Portfolio",
+  title: "Emilio's Portfolio",
   description:
     "This is Emilio Kariuki's portfolio that highlights everything about him and his doings",
   icons: [{ rel: "icon", url: "/favicon.ico" }],

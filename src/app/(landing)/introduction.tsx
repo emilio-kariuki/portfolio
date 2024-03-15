@@ -7,7 +7,7 @@ import Profile from "~/assets/profile.png";
 import { Button } from "~/components/ui/button";
 import { interRegular, quickSand } from "~/lib/font";
 
-import { GithubIcon, LinkedinIcon, TwitterIcon, } from "lucide-react";
+import { GithubIcon, LinkedinIcon, TwitterIcon } from "lucide-react";
 
 import { useTheme } from "next-themes";
 
@@ -16,24 +16,23 @@ export function Introduction() {
     <section className="relative">
       <div className="flex flex-row gap-8 py-10 sm:flex-col md:flex-row  lg:flex-row ">
         <MeCard />
-        <div className="hidden lg:flex md:flex 2xl:flex lg:flex-col md:flex-col 2xl:flex-col gap-2">
+        <div className="hidden gap-2 md:flex md:flex-col lg:flex lg:flex-col 2xl:flex 2xl:flex-col">
           <Image
             src={Profile}
             alt="Profile"
             width={1000}
             className="rounded-[20px] "
           />
-          <div className="flex flex-col gap-2 mt-5">
-            <SocialLine children={
+          <div className="mt-5 flex flex-col gap-2">
+            <SocialLine title="Follow on Twitter">
               <TwitterIcon size={20} />
-            } title="Follow on Twitter" />
-            <SocialLine children={
+            </SocialLine>
+            <SocialLine title="Follow on Github">
               <GithubIcon size={20} />
-            } title="Follow on Github" />
-            <SocialLine children={
+            </SocialLine>
+            <SocialLine title="Connect on Linkedin">
               <LinkedinIcon size={20} />
-            } title="Follow on LinkedIn" />
-
+            </SocialLine>
           </div>
         </div>
       </div>
@@ -41,44 +40,52 @@ export function Introduction() {
   );
 }
 
-function SocialLine(props: {
-  children: React.ReactNode
-  title: string
+function SocialLine({
+  children,
+  title,
+}: {
+  children: React.ReactNode;
+  title: string;
 }) {
   return (
-    <div className="block lg:flex md:flex 2xl:flex flex-row items-center justify-start gap-5">
-      {props.children}
-      <h3 className={`text-[14px] font-normal light:text-black dark:text-white ${interRegular.className}`}>{props.title}</h3>
+    <div className="block flex-row items-center justify-start gap-5 md:flex lg:flex 2xl:flex">
+      {children}
+      <h3
+        className={`light:text-black text-[14px] font-normal dark:text-white ${interRegular.className}`}
+      >
+        {title}
+      </h3>
     </div>
-  )
+  );
 }
 
 function MeCard() {
   const { theme } = useTheme();
   return (
     <div
-      className={`flex flex-col items-center lg:items-start md:items-start 2xl:items-start  rounded-[20px]  border-[#363535] bg-transparent   px-4 py-6 lg:px-16 lg:py-16 md:px-16 md:py-16 2xl:px-16 2xl:py-16 border-[0.3px]  mx-h-[1000px] `}
+      className={`mx-h-[1000px] flex flex-col items-center rounded-[20px] border-[0.3px]  border-[#363535]  bg-transparent px-4   py-6 md:items-start md:px-16 md:py-16 lg:items-start lg:px-16 lg:py-16 2xl:items-start 2xl:px-16  2xl:py-16 `}
     >
       <h1
-        className={`light:text-[#0C1927] text-center lg:text-start md:text-start 2xl:text-start text-[25px] lg:text-[40px] md:text-[40px] 2xl:text-[40px] font-bold dark:text-white ${quickSand.className}`}
+        className={`light:text-[#0C1927] text-center text-[25px] font-bold dark:text-white md:text-start md:text-[40px] lg:text-start lg:text-[40px] 2xl:text-start 2xl:text-[40px] ${quickSand.className}`}
       >
         Hi, am Emilio, a Software Engineer, with 2+ Years of Experience
       </h1>
-      <p className="light: mt-[20px] text-center lg:text-start md:text-start 2xl:text-start text-[14px] font-light lg:font-medium md:font-medium 2xl:font-medium text-[#0C1927] dark:text-[#D9D9D9]">
+      <p className="light: mt-[20px] text-center text-[14px] font-light text-[#0C1927] dark:text-[#D9D9D9] md:text-start md:font-medium lg:text-start lg:font-medium 2xl:text-start 2xl:font-medium">
         I am software engineer who codes like a boss, learns like a sponge, and
         solves problems like a pro. I can make awesome apps for web and mobile
         using cool tech and magic. I work well with others, delivers great
         product, and always looking for new challenges. When am not coding am
         either travelling, reading or watching memes.
       </p>
-      <p className="mt-[15px] lg:mt-[25px] md:mt-[25px] 2xl:mt-[25px] text-[15px] lg:text-[25px] md:text-[25px] 2xl:text-[25px] font-semibold text-[#0C1927] dark:text-[#D9D9D9]">
+      <p className="mt-[15px] text-[15px] font-semibold text-[#0C1927] dark:text-[#D9D9D9] md:mt-[25px] md:text-[25px] lg:mt-[25px] lg:text-[25px] 2xl:mt-[25px] 2xl:text-[25px]">
         Currently working at Fourbic
       </p>
-      <div className="mt-[20px] lg:mt-[30px] md:mt-[30px] 2xl:mt-[30px] flex flex-row items-center justify-start gap-11">
-        <Button className="h-[40px] lg:h-[60px] md:h-[60px] 2xl:h-[60px] w-[200px] lg:w-[250px] md:w-[250px] 2xl:w-[250px] rounded-[120px] bg-[#4055C0] hover:bg-[#4d66e3]">
-          <h1 className="text-[12px] lg:text-[15px] md:text-[15px] 2xl:text-[15px] text-[#ffffff]">Connect With Me</h1>
+      <div className="mt-[20px] flex flex-row items-center justify-start gap-11 md:mt-[30px] lg:mt-[30px] 2xl:mt-[30px]">
+        <Button className="h-[40px] w-[200px] rounded-[120px] bg-[#4055C0] hover:bg-[#4d66e3] md:h-[60px] md:w-[250px] lg:h-[60px] lg:w-[250px] 2xl:h-[60px] 2xl:w-[250px]">
+          <h1 className="text-[12px] text-[#ffffff] md:text-[15px] lg:text-[15px] 2xl:text-[15px]">
+            Connect With Me
+          </h1>
         </Button>
-
       </div>
     </div>
   );
