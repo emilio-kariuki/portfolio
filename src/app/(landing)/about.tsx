@@ -70,7 +70,9 @@ export function About() {
             </div>
           ))}
         </div>
-        <Button className="mt-5 flex h-[40px] lg:h-[60px] md:h-[60px] 2xl:h-[60px] w-[200px] lg:w-[250px] md:w-[250px] 2xl:w-[250px]   flex-row gap-3 rounded-[120px] bg-[#4055D0] hover:bg-[#4055D0]">
+        <Button onClick={()=>{
+          window.open("https://www.emilio.today/resume.pdf")
+        }} className="mt-5 flex h-[40px] lg:h-[60px] md:h-[60px] 2xl:h-[60px] w-[200px] lg:w-[250px] md:w-[250px] 2xl:w-[250px]   flex-row gap-3 rounded-[120px] bg-[#4055D0] hover:bg-[#4055D0]">
           <h1 className="text-[12px] lg:text-[15px] md:text-[15px] 2xl:text-[15px] text-white">Download Resume</h1>
           <Download size={20} color="#ffffff" />
         </Button>
