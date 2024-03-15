@@ -1,21 +1,13 @@
 "use client";
 
 import { cn } from "~/lib/utils";
-import {
-  Building2Icon,
-  HeartHandshakeIcon,
-  LucideProps,
-  TractorIcon,
-} from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "../ui/navigation-menu";
 
 type PageLink = {
