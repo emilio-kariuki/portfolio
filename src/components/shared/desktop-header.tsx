@@ -43,14 +43,14 @@ export function DesktopMenu() {
 
   return (
     <NavigationMenu className="hidden md:flex">
-      <NavigationMenuList className="flex items-center space-x-5">
+      <NavigationMenuList className="flex items-center space-x-3">
         {links.map((link) => (
           <NavigationMenuItem key={link.label}>
             <Link href={link.href} legacyBehavior passHref>
               <NavigationMenuLink
                 className={cn(
                   "rounded-3xl px-3 py-2 text-base font-normal transition-colors",
-                  "text-white hover:font-medium "
+                  "hover:font-medium "
                 )}
               >
                 {link.label}

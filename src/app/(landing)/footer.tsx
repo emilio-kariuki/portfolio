@@ -40,7 +40,7 @@ export function Footer() {
         </div>
         <div className="flex flex-row items-center justify-center mt-5 lg:mt-0 md:mt-0 xl:mt-0 2xl:mt-0">
           <Button className="px-10 py-4 rounded-[120px] dark:bg-[#4055C0]  hover:bg-[#4b64e2]">
-            <h1 className="text-[12px] lg:text-[15px] md:text-[15px] 2xl:text-[15px] font-medium light:text-[#0C1927] dark:text-white">Talk With Me</h1>
+            <h1 className="text-[12px] lg:text-[14px] md:text-[14px] 2xl:text-[14px] font-medium light:text-[#0C1927] dark:text-white">Talk With Me</h1>
           </Button>
         </div>
       </div>

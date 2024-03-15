@@ -1,9 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Picsa from "~/assets/picsa.png";
-import GDSC from "~/assets/placeholder.svg";
-import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar";
 import { inter, quickSand, quickSandRegular } from "~/lib/font";
 import { Footer } from "../(landing)/footer";
 const projects = [
@@ -70,7 +67,7 @@ export default function Projects() {
           excellence.
         </p>
 
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 2xl:grid-cols-4 gap-5">
+        <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 2xl:grid-cols-4 gap-4">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -80,19 +77,19 @@ export default function Projects() {
 
                 <div className="flex flex-row items-center justify-start gap-2 ">
                   <h1
-                    className={`light:text-[#0C1927] text-[17px] lg:text-[20px] md:text-[20px] 2xl:text-[20px] font-bold dark:text-white ${inter.className}`}
+                    className={`light:text-[#0C1927] text-[15px] lg:text-[18px] md:text-[18px] 2xl:text-[18px] font-bold dark:text-white ${inter.className}`}
                   >
                     {project.name}
                   </h1>
                 </div>
-                <p className="light:text-[#0C1927] py-1 text-[14px] dark:text-[#827c7c]">
+                <p className="light:text-[#0C1927]  text-[14px] dark:text-[#827c7c]">
                   {project.description}
                 </p>
-                <div className="mt-1 flex flex-row items-center justify-start gap-2 mb-5">
+                <div className="mt-1 flex flex-row items-center justify-start gap-2">
                   {project.stack.map((stack, index) => (
                     <div
                       key={index}
-                      className="flex items-center justify-center rounded-[5px] bg-[#e6e7ea] px-2 py-1 dark:bg-[#151d41] "
+                      className="flex items-center justify-center rounded-[3px] bg-[#e6e7ea] px-2 py-1 dark:bg-[#151d41] "
                     >
                       <span
                         key={index}
@@ -103,7 +100,7 @@ export default function Projects() {
                     </div>
                   ))}
                 </div>
-                <div className="mx-auto h-[160px] lg:h-[160px] md:h-[160px] 2xl:h-[240px] relative">
+                <div className="mx-auto h-[160px] lg:h-[160px] md:h-[160px] 2xl:h-[240px] relative my-2">
                   <Image
                     src={project.image}
                     alt="@project_image"
@@ -111,15 +108,15 @@ export default function Projects() {
                     objectFit="cover"
                     className="rounded-[5px]"
                   />
-                  </div>
-                <div className="mt-5 flex flex-row gap-1 items-center justify-start hover:underline transition-all duration-300 ease-in-out">
+                </div>
+                <div className=" flex flex-row gap-1 items-center justify-start hover:underline">
                   <a
                     href={project.link}
-                    className="light:text-[#4055C0]  text-[14px] font-medium dark:text-[#0AB987] "
+                    className="light:text-[#4055C0]  text-[14px] font-medium dark:text-[#827c7c] "
                   >
-                    See more
+                    View project
                   </a>
-                   <ArrowRight size={15} className="light:text-[#4055C0]" />
+                  <ArrowRight size={15} className="light:text-[#4055C0] dark:text-[#827c7c]" />
                 </div>
               </div>
             </div>

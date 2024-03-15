@@ -57,7 +57,7 @@ function MeCard() {
   const { theme } = useTheme();
   return (
     <div
-      className={`flex flex-col items-center lg:items-start md:items-start 2xl:items-start  rounded-[20px]  border-[#363535] bg-[#F5F6F8]   px-4 py-6 lg:px-16 lg:py-16 md:px-16 md:py-16 2xl:px-16 2xl:py-16 dark:border-[0.1px] dark:bg-[#030b20] mx-h-[1000px] `}
+      className={`flex flex-col items-center lg:items-start md:items-start 2xl:items-start  rounded-[20px]  border-[#363535] bg-transparent   px-4 py-6 lg:px-16 lg:py-16 md:px-16 md:py-16 2xl:px-16 2xl:py-16 border-[0.3px]  mx-h-[1000px] `}
     >
       <h1
         className={`light:text-[#0C1927] text-center lg:text-start md:text-start 2xl:text-start text-[25px] lg:text-[40px] md:text-[40px] 2xl:text-[40px] font-bold dark:text-white ${quickSand.className}`}

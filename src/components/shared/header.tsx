@@ -32,7 +32,7 @@ export default function Header() {
   return (
     <nav
       className={cn(
-        "mn-w-[] z-30 flex w-full items-center bg-[#FAFBFC] dark:bg-[#030b20] px-1 lg:px-[160px] md:px-[160px] 2xl:px-[160px]",
+        "mn-w-[] z-30 flex w-full items-center bg-[#0E1111]  px-1 lg:px-[160px] md:px-[160px] 2xl:px-[160px]",
         "sticky top-0",
       )}
     >

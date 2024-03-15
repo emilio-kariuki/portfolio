@@ -7,7 +7,7 @@ const rubiks = Rubik_Bubbles({
 });
 
 const inter = Inter({
-  weight: "500",
+  weight: "600",
   style: "normal",
   subsets: ["cyrillic"],
 });

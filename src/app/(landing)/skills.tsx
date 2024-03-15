@@ -82,8 +82,8 @@ function SkillCard() {
       {stacks.map((stack, index) => (
         <div
           key={index}
-          className="flex transform cursor-pointer flex-col items-center justify-center rounded-[20px] dark:border-[0.2px] border-[#363535]  bg-[#F5F6F8] px-4 py-6 lg:px-16 lg:py-16 md:px-16 md:py-16 2xl:px-16 2xl:py-16
-          dark:bg-[#030b20]"
+          className="flex transform cursor-pointer flex-col items-center justify-center rounded-[20px] dark:border-[0.2px] border-[#363535]  bg-transparent px-4 py-4 lg:px-16 lg:py-16 md:px-16 md:py-16 2xl:px-16 2xl:py-16
+          "
         >
           <div
             className={`rounded-full ${index === 0 ? "bg-[#4055C0]" : index === 1 ? "bg-[#FF4901]" : index === 2 ? "bg-[#0AB987]" : index === 3 ? "bg-[#B80E42]" : "bg-[#FF4901]"} p-4`}
@@ -101,7 +101,7 @@ function SkillCard() {
             {stack.tasks.map((task, index) => (
               <React.Fragment key={index}>
                 <div className="flex flex-row items-center justify-start">
-                  <div className="mr-3 items-center justify-center rounded-full bg-[#21C55E] p-1">
+                  <div className="mr-5 items-center justify-center rounded-full bg-[#21C55E] p-1">
                     <Check size={12} />
                   </div>
                   <li className="py-2 font-light lg:font-medium md:font-medium 2xl:font-medium">{task}</li>

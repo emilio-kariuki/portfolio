@@ -43,7 +43,7 @@ export function About() {
   ];
   return (
     <section className="relative">
-      <div className="flex flex-col items-center lg:items-start md:items-start 2xl:items-start  rounded-[20px] border-[#363535] bg-[#F5F6F8] px-4 py-6 lg:px-16 lg:py-16 md:px-16 md:py-16 2xl:px-16 2xl:py-16  dark:border-[0.1px] dark:bg-[#030b20] ">
+      <div className="flex flex-col items-center lg:items-start md:items-start 2xl:items-start  rounded-[20px] border-[#363535] bg-transparent px-4 py-6 lg:px-16 lg:py-16 md:px-16 md:py-16 2xl:px-16 2xl:py-16  dark:border-[0.1px]">
         <h1
           className={`light:text-[#4055C0] text-[25px] lg:text-[40px] md:text-[40px] 2xl:text-[40px] font-bold dark:text-white ${quickSand.className}`}
         >

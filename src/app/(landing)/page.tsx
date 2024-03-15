@@ -5,7 +5,7 @@ import { Skills } from "./skills";
 
 export default function Home() {
   return (
-    <main className="light:bg-[#FDFCFA] h-full w-full px-[15px] lg:px-[170px] md:px-[90px] py-10">
+    <main className="light:bg-[#FDFCFA] dark:bg-[#0E1111] h-full w-full px-[15px] lg:px-[170px] md:px-[90px] py-10">
       <Introduction />
       <About />
       <Skills />
