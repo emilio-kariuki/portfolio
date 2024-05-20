@@ -104,7 +104,7 @@ class AppRouter {
         path: '/welcome',
         pageBuilder: (context, state) => CustomTransitionPage<void>(
                 key: state.pageKey,
-                child:  const Checker(),
+                child:  Container(),
                 transitionsBuilder:
                     (context, animation, secondaryAnimation, child) =>
                         FadeTransition(opacity:animation, child: child),
@@ -153,7 +153,7 @@ printf "
 export 'package:flutter/rendering.dart';
 export 'package:flutter/material.dart';
 export 'package:go_router/go_router.dart';
-export 'package:ecoville/utilities/utilities.dart';
+export 'package:$NAME/utilities/utilities.dart';
 export 'package:shared_preferences/shared_preferences.dart';
 export 'package:google_fonts/google_fonts.dart';
 export 'package:toastification/toastification.dart';
@@ -164,8 +164,6 @@ export 'package:flutter_spinkit/flutter_spinkit.dart';
 export 'package:flutter_svg/svg.dart';
 export 'package:gap/gap.dart';
 export 'package:flutter/foundation.dart';
-export 'package:firebase_core/firebase_core.dart';
-export 'package:firebase_messaging/firebase_messaging.dart';
 export './utilities.dart';
 " >> lib/utilities/packages.dart
 
@@ -347,7 +345,7 @@ void showErrorToast({
         title,
         style: GoogleFonts.inter(
         fontSize: 14,
-        color: red,
+        color: Colors.red,
         fontWeight: FontWeight.w600,
         ),
     ),
@@ -355,7 +353,7 @@ void showErrorToast({
         message,
         style: GoogleFonts.inter(
         fontSize: 12,
-        color: red,
+        color: Colors.red,
         fontWeight: FontWeight.w400,
         ),
     ),
@@ -745,5 +743,6 @@ else
 fi
 
 echo -e "\033[39;45m SUCCESS:Thank you for using the emilio flutter script.😎${NC}"
+
 
 
