@@ -7,7 +7,7 @@ await import("./src/env.js");
 /** @type {import("next").NextConfig} */
 const config = {
   images:{
-    domains: ["emiliok.vercel.app", "emilio.today"],
+    domains: ["emiliok.vercel.app", "emilio.today","utfs.io"],
   }
 };
 

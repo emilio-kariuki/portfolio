@@ -11,10 +11,10 @@ const footerRoutes = [
     name: "Projects",
     href: "/projects",
   },
-  {
-    name: "Blogs",
-    href: "/blogs",
-  },
+  // {
+  //   name: "Blogs",
+  //   href: "/blogs",
+  // },
 ];
 
 export function Footer() {

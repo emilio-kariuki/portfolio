@@ -27,10 +27,10 @@ export function DesktopMenu() {
       label: "Projects",
       href: "/projects",
     },
-    {
-      label: "Blogs",
-      href: "/blogs",
-    },
+    // {
+    //   label: "Blogs",
+    //   href: "/blogs",
+    // },
   ];
 
   return (

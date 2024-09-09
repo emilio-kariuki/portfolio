@@ -14,13 +14,14 @@ import { useTheme } from "next-themes";
 export function Introduction() {
   return (
     <section className="relative">
-      <div className="flex flex-row gap-8 py-10 sm:flex-col md:flex-row  lg:flex-row ">
+      <div className="flex h-fit flex-row gap-8 py-10 sm:flex-col md:flex-row  lg:flex-row ">
         <MeCard />
-        <div className="hidden gap-2 md:flex md:flex-col lg:flex lg:flex-col 2xl:flex 2xl:flex-col">
+        <div className="hidden gap-2 md:flex md:flex-col lg:flex lg:flex-col 2xl:flex 2xl:flex-col h-fit">
           <Image
-            src={Profile}
+            src="https://utfs.io/f/ae31c830-ed81-473c-b2a8-b16759556807-69bvvo.jpeg"
             alt="Profile"
-            width={1000}
+            width={500}
+            height={500}
             className="rounded-[20px] "
           />
           <div className="mt-5 flex flex-col gap-2">

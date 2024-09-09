@@ -21,10 +21,10 @@ const links = [
     label: "Projects",
     href: "/projects",
   },
-  {
-    label: "Blogs",
-    href: "/blogs",
-  },
+  // {
+  //   label: "Blogs",
+  //   href: "/blogs",
+  // },
 ];
 
 export default function Header() {
@@ -52,7 +52,7 @@ export default function Header() {
           >
             <Github size={20} />
           </button>
-          <button
+          {/* <button
             className="border-[0.2px] border-[#363535] light:border-[#0C1927] p-3  transition-colors rounded-[8px]"
 
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -64,7 +64,7 @@ export default function Header() {
                 <MoonStar size={20} />
               )
             }
-          </button>
+          </button> */}
           <MobileMenu />
         </div>
       </div>
